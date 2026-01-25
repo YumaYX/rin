@@ -1,9 +1,9 @@
+use clap::Parser;
 use futures::future::join_all;
 use rusqlite::{Connection, Result, params};
 use scraper::{Html, Selector};
 use std::{collections::HashSet, fs, sync::Arc};
 use tokio::sync::{Mutex, Semaphore};
-use clap::Parser;
 
 /// Fetch titles from URLs and store them in SQLite
 #[derive(Parser, Debug)]
