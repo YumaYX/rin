@@ -7,4 +7,5 @@ members = [
     "pac",
     "ruxx",
     "weather",
+    "wr",
 ]

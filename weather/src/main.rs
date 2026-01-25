@@ -18,7 +18,7 @@ fn main() -> Result<(), Box<dyn std::error::Error>> {
         let max = fmt_temp(&f.temperature.max.celsius);
 
         println!(
-            "  {}: {}  最高 {}℃ / 最低 {}℃",
+            " {}: {}  最高 {}℃ / 最低 {}℃",
             f.date,
             convert2emoji(&f.telop),
             max,

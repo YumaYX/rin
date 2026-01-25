@@ -1,7 +1,7 @@
+use clap::Parser;
 use std::fs::File;
 use std::io::{self, BufRead};
 use std::path::Path;
-use clap::Parser;
 
 /// Process a file and print parent lines containing a keyword and their children.
 #[derive(Parser, Debug)]

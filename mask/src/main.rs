@@ -14,12 +14,10 @@ fn main() {
     let ip = Ipv4Addr::new(255, 255, 255, 255);
 
     match args.mask {
-        Some(mask) => {
-            match get_masked_ip(ip, mask) {
-                Ok(result) => println!("{}", result),
-                Err(msg) => eprintln!("{}", msg),
-            }
-        }
+        Some(mask) => match get_masked_ip(ip, mask) {
+            Ok(result) => println!("{}", result),
+            Err(msg) => eprintln!("{}", msg),
+        },
         None => {
             // No argument: print all masks 0-32
             for mask in 0..=32 {

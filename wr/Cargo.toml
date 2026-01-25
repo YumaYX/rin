@@ -9,3 +9,4 @@ reqwest = { version = "0.11", features = ["json", "gzip", "brotli"] } # HTTP ク
 scraper = "0.13"                                     # HTML パース
 rusqlite = { version = "0.29", features = ["bundled"] } # SQLite
 futures = "0.3"  
+clap = { version = "4", features = ["derive"] }
